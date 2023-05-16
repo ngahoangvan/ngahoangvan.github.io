@@ -29,9 +29,9 @@ export default function About() {
             <ul className={Style.skills}>
                 {info.skills.proficientWith.map((proficiency, index) => <li key={index}>{proficiency}</li>)}
             </ul>
-            <p style={{color: info.baseColor}}> Exposed To</p>
+            <p style={{color: info.baseColor}}> Have knowledge in</p>
             <ul className={Style.skills}>
-                {info.skills.exposedTo.map((skill, index) => <li key={index}>{skill}</li>)}
+                {info.skills.knowledgeIn.map((skill, index) => <li key={index}>{skill}</li>)}
             </ul>
         </>;
     }
