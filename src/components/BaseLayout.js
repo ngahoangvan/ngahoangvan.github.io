@@ -5,7 +5,7 @@ import Home from "./home/Home";
 import About from "./about/About";
 import Portfolio from "./portfolio/Portfolio";
 import Experience from "./experience/Experience"
-import { Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import { Box, Grid } from "@mui/material";
 import { info } from "../info/Info"
 
@@ -14,18 +14,16 @@ export default function BaseLayout() {
 
    function handleToggleDarkMode() {
       let oppositeOfCurrentDarkMode = !darkMode
-      console.log(oppositeOfCurrentDarkMode)
       localStorage.setItem('darkMode', `${oppositeOfCurrentDarkMode}`)
       setDarkMode(oppositeOfCurrentDarkMode)
    }
 
    useEffect(() => {
       let detectedDarkMode = localStorage.getItem('darkMode');
-
       if (detectedDarkMode) {
          setDarkMode(detectedDarkMode)
       } else {
-         localStorage.setItem('darkMode', 'true')
+         localStorage.setItem('darkMode', "false")
       }
    }, [])
 
@@ -47,7 +45,7 @@ export default function BaseLayout() {
             <Grid item>
                <Box component={'footer'} display={'flex'} flexDirection={'column'} alignItems={'center'}
                   py={'1.5rem'} sx={{ opacity: 0.7 }} width={'100%'}>
-                  <p><a href={'https://paytonpierce.dev'}>{info.firstName} {info.lastName}</a></p>
+                  <p><a href={'https://github.com/ngahoangvan'}>{info.firstName} {info.lastName}</a></p>
                   <p>&copy; 2023</p>
                </Box>
             </Grid>
