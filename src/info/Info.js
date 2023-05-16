@@ -64,17 +64,17 @@ export const info = {
             icon: "fa fa-linkedin",
             label: 'linkedin'
         },
-        
-// Feel free to remove any of these that you don't have. I'll write an FAQ on how to add new ones later, let me know if you have a request for an icon!
-// Just change the links so that they lead to your social profiles.
+
+        // Feel free to remove any of these that you don't have. I'll write an FAQ on how to add new ones later, let me know if you have a request for an icon!
+        // Just change the links so that they lead to your social profiles.
 
     ],
     bio: "Hello! I'm Jacob (my full Vietnamese name is Hoàng Văn Ngà).I am a Software Engineer with over five years of experience in Software Development and Back-End Web Server. My major programming language is Python. I have strong knowledge in using some Python web frameworks like Django, Flask,... I also have good skills in requirement analysis and technical solution proposals.",
     skills:
-        {
-            proficientWith: ['Python', 'Django - DRF', 'Flask', 'Javascript', 'NodeJS', 'ReactJS', 'Docker', 'CI/CD'],
-            knowledgeIn: ['AWS/Azure/GCP', 'Airflow', 'PostgreSQL', "Mongo", "Firebase", "DynamoDB"]
-        }
+    {
+        proficientWith: ['Python', 'Django - DRF', 'Flask', 'Javascript', 'NodeJS', 'ReactJS', 'Docker', 'CI/CD'],
+        knowledgeIn: ['AWS/Azure/GCP', 'Airflow', 'PostgreSQL', "Mongo", "Firebase", "DynamoDB"]
+    }
     ,
     hobbies: [
         {
@@ -93,8 +93,63 @@ export const info = {
             label: 'sport',
             emoji: '⚽'
         }
-// Same as above, change the emojis to match / relate to your hobbies or interests.
-// You can also remove the emojis if you'd like, I just think they look cute :P
+        // Same as above, change the emojis to match / relate to your hobbies or interests.
+        // You can also remove the emojis if you'd like, I just think they look cute :P
+    ],
+    experiences: [
+        {
+            "company": "Saigon Technology Solution",
+            "position": "Software Engineer",
+            "start": "Nov 2022",
+            "end": "",
+            "localtion": "Viet Nam",
+            "responsibility": [
+                "Built Face Recognize System by Python - Django",
+                "Develop the Airflow DAGs for processing data from other services and releasing the report",
+                "Maintain, deploy the system, fix issues.",
+            ]
+        },
+        {
+            "company": "Datatize Inc",
+            "position": "Software Engineer",
+            "start": "May 2021",
+            "end": "Oct 2022",
+            "localtion": "Singapore",
+            "responsibility": [
+                "Worked with Python - Dash(Flask) and Javascript - ReactJS framework to build the Data Visualization Systems.",
+                "Worked with Airflow tools, config schedule tasks.",
+                "Built company website with ReactJS.",
+                "Setup project as microservice with Docker and docker-compose.",
+                "Setup CI/CD pipelines for all projects.",
+                "Built monitoring, logging server to track other server.",
+                "Worked with Cloud Provider like AWS, GCP and Azure.",
+            ]
+        },
+        {
+            "company": "D-soft JSC",
+            "position": "Web Developer",
+            "start": "Apr 2019",
+            "end": "Apr 2021",
+            "localtion": "Viet Nam",
+            "responsibility": [
+                "Developed web application tool to manage the IoT Device, Business System (Orders, Inventory, Warehouse).",
+                "Developed web application tool to Debuging for AI system, Dashboard for Face Recognize System.",
+                "Implemented API microservice in Django, Flask.",
+                "R&D about Microsoft Azure.",
+                "Built automated CI/CD pipelines on Gitlab CI, Github Action for containerized application using Docker, Azure Container Registry and deployed onto Azure Kubernetes Service.",
+            ]
+        },
+        {
+            "company": "GMO-Z VietnamLab Center",
+            "position": "Internship",
+            "start": "Jan 2019",
+            "end": "Mar 2019",
+            "localtion": "Japan",
+            "responsibility": [
+                "Developed web application Japanse Examination System like tryjlpt.com.",
+                "Built automated using Ansible-Docker."
+            ]
+        },
     ],
     portfolio: [ // This is where your portfolio projects will be detailed
         // {
