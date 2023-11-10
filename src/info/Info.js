@@ -17,6 +17,13 @@ that might not be obvious right off the bat :) I recommend looking at the templa
 of what each of the values mean.
  */
 
+export const extraInfo = {
+    selfPortrait: self, // don't change this unless you want to name your self-portrait in the "img" folder something else!
+    gradient: `-webkit-linear-gradient(135deg, ${colors})`, // don't change this either
+    baseColor: colors[0],
+    initials: "JH", // the example uses first and last, but feel free to use three or more if you like.
+}
+
 export const info = {
     firstName: "Jacob",
     lastName: "Hoang",
@@ -69,7 +76,7 @@ export const info = {
         // Just change the links so that they lead to your social profiles.
 
     ],
-    bio: "Hello! I'm Jacob (my full Vietnamese name is Hoàng Văn Ngà).I am a Software Engineer with over five years of experience in Software Development and Back-End Web Server. My major programming language is Python. I have strong knowledge in using some Python web frameworks like Django, Flask,... I also have good skills in requirement analysis and technical solution proposals.",
+    bio: "Hello! I'm Jacob (my full Vietnamese name is Hoàng Văn Ngà), a Software Engineer with over five years of experience in Software Development and Back-End Web Server. My primary programming language is Python. I have a strong knowledge of using some Python web frameworks like Django, Flask, and also possess good skills in requirement analysis and proposing technical solutions.",
     skills:
     {
         proficientWith: ['Python', 'Django - DRF', 'Flask', 'Javascript', 'NodeJS', 'ReactJS', 'Docker', 'CI/CD'],
